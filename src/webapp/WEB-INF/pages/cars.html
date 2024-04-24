@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Information</title>
+</head>
+<body>
+<h1>List of Cars</h1>
+<table>
+    <tr>
+        <th>Model</th>
+        <th>Series</th>
+        <th>Owner</th>
+    </tr>
+    <tr th:each="car : ${cars}">
+        <td th:text="${car.model}">Model1</td>
+        <td th:text="${car.series}">Series1</td>
+        <td th:text="${car.owner}">Owner1</td>
+    </tr>
+</table>
+</body>
+</html>
